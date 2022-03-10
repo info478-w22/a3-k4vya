@@ -1,0 +1,4 @@
+type,inf,act,rec
+None,0.62,0.5,0.07
+Mask Indoors,0.42,0.5,0.07
+Social Distancing,0.22,0.5,0.07
