@@ -4,6 +4,7 @@
 require(EpiModel)
 #require(dcm)
 library(tidyverse)
+library("rsconnect")
 #################################################################################
 #### Deterministic compartmental models
 #################################################################################
