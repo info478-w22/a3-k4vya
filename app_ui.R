@@ -1,6 +1,11 @@
 library(shiny)
 library(shinythemes)
 library("rsconnect")
+require(EpiModel)
+#require(dcm)
+library(tidyverse)
+library(plotly)
+source("meep.R")
 
 # Page One
 page_one <- tabPanel(
@@ -30,7 +35,7 @@ page_two <- tabPanel(
       selected = "None"
     )),           
     mainPanel(   
-      plotlyOutput("det"),
+      plotOutput("det"),
     )))
 
 # Page Three
@@ -46,7 +51,7 @@ page_three <- tabPanel(
       selected = "None"
     )),           
     mainPanel(   
-      plotlyOutput("stc"),
+      plotOutput("stc"),
     )))
 
 
